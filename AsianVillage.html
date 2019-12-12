@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
 
+<body>
+  
+
+    
 
     <div id=intro>
         <h1>
-            Asian Village 
+            Asian Village
         </h1>
 
         <h2>
@@ -28,7 +31,7 @@
 
 
 <script>
-    var BackgroundColor = "BLUE";//changes the color of the background
+    var BackgroundColor = "Pink";//changes the color of the background
     document.body.style.backgroundColor=BackgroundColor
     
     rollDice();
@@ -44,7 +47,7 @@
     
     function rollDice(){//allows the dice to be rolled
             var diceRoll= Math.floor(Math.random() * 6) +1;
-            alert('You rolled a '+ diceRoll);
+            document.getElementById("demo").innerHTML = ('You rolled a '+ diceRoll);
         
     }
     function payFee();
@@ -52,15 +55,34 @@
     
     function generateStartMember(){//will pick 1 member to roll the dice first at random
     }
-document.getElementById("demo").innerHTML = players;
+
+    function takeAwayMoney(){
+
+    }
+
+    function giveBonusMoney(){
+
+    }
+
+    function jailCard(){
+
+    }
+    document.getElementById("demo").innerHTML = players;
     
     
-    function button(){
+    function button(){ 
         var players = ["    Yang    ", "    Thao    ", "    Xiong   ", "    Lor     ", "    Vang       ", "     Lee     ", "        Her     ", "        Moua        "];
         document.getElementById("demo").innerHTML = players;
-    }
+
+    }                                                                                                
       
 </script>
+
+
+
 </body>
+
+
+
 </html>
 
